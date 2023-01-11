@@ -53,7 +53,7 @@ jobs:
 
       - name: Update version in pyproject
         id: new_version_pyproject
-        run: head -2 pyproject.toml > new_pyproject.toml;echo 'version = \"${{ steps.tag_name.outputs.value }}\"'>> new_pyproject.toml;tail -n +4 pyproject.toml >> new_pyproject.toml;mv new_pyproject.toml pyproject.toml
+        run: head -2 pyproject.toml > new_pyproject.toml;echo 'version = "${{ steps.tag_name.outputs.value }}"'>> new_pyproject.toml;tail -n +4 pyproject.toml >> new_pyproject.toml;mv new_pyproject.toml pyproject.toml
 
       - name: Push new files back to branch.
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
