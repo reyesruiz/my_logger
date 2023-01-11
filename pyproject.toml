@@ -1,6 +1,6 @@
 [project]
 name = "com_digitalruiz_my_logger"
-version = "0.0.1"
+version = " "
 authors = [
   { name="Reyes Ruiz", email="reyes@digitalruiz.com" },
 ]
