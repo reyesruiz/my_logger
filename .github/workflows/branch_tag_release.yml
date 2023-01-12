@@ -78,6 +78,7 @@ jobs:
         with:
           github_token: ${{ secrets.AUTO_COMMIT }}
           custom_tag: ${{ steps.tag_name.outputs.value }}
+          tag_prefix: ''
 
       - name: Create Release
         uses: ncipollo/release-action@v1.10.0
