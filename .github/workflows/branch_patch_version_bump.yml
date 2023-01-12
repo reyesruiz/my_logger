@@ -57,7 +57,7 @@ jobs:
 
       - name: Delete extra file
         id: delete_extra_file
-        run: rm version.propertiesr
+        run: if [ -f version.propertiesr ]; then rm version.propertiesr; fi
         
       - name: Push new files back to branch.
         uses: stefanzweifel/git-auto-commit-action@v4.14.1
