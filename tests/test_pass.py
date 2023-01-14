@@ -4,6 +4,6 @@ Placeholder to make test pass
 
 def test_placeholder():
     '''
-    Placeholder to make tests pass
+    test placeholder
     '''
-    return True
+    assert True
